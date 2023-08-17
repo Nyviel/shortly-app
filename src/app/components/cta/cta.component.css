@@ -6,7 +6,7 @@
 
   width: 100%;
   height: 250px;
-  background: url("/assets/images/bg-boost-desktop.svg")
+  background: url("/shortly-app/assets/images/bg-boost-desktop.svg")
     var(--clr-primary-dark-violet);
   background-position: center;
   background-size: cover;

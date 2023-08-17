@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
 
-  background: url("/assets/images/bg-shorten-desktop.svg")
+  background: url("/shortly-app/assets/images/bg-shorten-desktop.svg")
     var(--clr-primary-dark-violet);
   background-size: cover;
   padding: 3.5rem;
