@@ -1,0 +1,36 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 250px;
+  background: url("/assets/images/bg-boost-desktop.svg")
+    var(--clr-primary-dark-violet);
+  background-position: center;
+  background-size: cover;
+}
+
+.cta h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.75rem);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.cta button {
+  border: none;
+  border-radius: 25px;
+  padding: 14px 42px;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--clr-primary-cyan);
+}
+
+@media (width < 62.5em) {
+  .cta button {
+    margin-top: 1rem;
+  }
+}

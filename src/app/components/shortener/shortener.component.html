@@ -1,0 +1,36 @@
+<section class="shortener">
+  <div class="shortener__wrapper | container">
+    <form [formGroup]="form" (submit)="onSubmit()">
+      <div class="input__wrapper">
+        <input
+          id="link"
+          type="text"
+          formControlName="link"
+          placeholder="Shorten a link here..."
+          required
+        />
+        <div
+          *ngIf="link?.invalid && (link?.dirty || link?.touched)"
+          class="alert"
+        >
+          <div *ngIf="link?.errors?.['required']">Link is required.</div>
+        </div>
+      </div>
+      <input type="submit" value="Shorten it!" />
+    </form>
+  </div>
+  <div class="shortener__results | container">
+    <div class="result" *ngFor="let shortLink of shortenedLinks; let i = index">
+      <p class="original-link">{{ shortLink.original_link }}</p>
+      <div>
+        <p class="short-link">{{ shortLink.full_short_link }}</p>
+        <button
+          id="btnId{{ i }}"
+          (click)="copyLink(shortLink.full_short_link, i)"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
