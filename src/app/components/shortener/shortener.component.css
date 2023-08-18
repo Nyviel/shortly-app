@@ -45,7 +45,7 @@
 }
 
 .shortener form input[type="submit"]:hover {
-  filter: brightness(150%);
+  filter: brightness(115%);
   cursor: pointer;
 }
 

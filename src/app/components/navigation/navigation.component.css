@@ -61,9 +61,10 @@
   padding: 8px 22px;
 }
 
-.auth-buttons button:nth-child(2):hover,
-.auth-buttons button:nth-child(2):focus {
+.auth-buttons button:hover,
+.auth-buttons button:focus {
   filter: brightness(115%);
+  cursor: pointer;
 }
 
 @media (max-width: 50em) {
@@ -86,14 +87,17 @@
   .primary-navigation[display-mobile-nav] {
     display: flex;
     flex-direction: column;
+
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 25px;
+
     width: 90%;
-    height: 30%;
+    height: fit-content;
+    border-radius: 25px;
     background-color: var(--clr-primary-dark-violet);
+    padding: 10px;
   }
 
   .primary-navigation[display-mobile-nav] > .nav-list {

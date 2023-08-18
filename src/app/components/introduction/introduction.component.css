@@ -31,6 +31,11 @@
   background-color: var(--clr-primary-cyan);
 }
 
+.introduction__text > button:hover {
+  filter: brightness(115%);
+  cursor: pointer;
+}
+
 @media (min-width: 89.9em) {
   .introduction {
     padding: 0;

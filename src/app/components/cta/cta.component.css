@@ -29,6 +29,11 @@
   background-color: var(--clr-primary-cyan);
 }
 
+.cta button:hover {
+  filter: brightness(115%);
+  cursor: pointer;
+}
+
 @media (width < 62.5em) {
   .cta button {
     margin-top: 1rem;
