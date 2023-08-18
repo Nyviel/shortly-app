@@ -1,16 +1,19 @@
 .shortener {
   position: relative;
-  margin: 10rem 0 6rem 0;
+  height: fit-content;
+  padding: 5rem;
 }
 
-.shortener__wrapper {
-  display: flex;
-  justify-content: center;
+.shortener__form {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
 
   background: url("/shortly-app/assets/images/bg-shorten-desktop.svg")
     var(--clr-primary-dark-violet);
   background-size: cover;
-  padding: 3.5rem;
+  padding: 3rem;
   border-radius: 10px;
 }
 
@@ -61,8 +64,14 @@
   color: red;
 }
 
-.shortener__results {
-  margin-top: 2rem;
+.shortened-links {
+  background-color: var(--clr-neutral-light-gray);
+}
+
+.shortened-links > .spacer {
+  height: 75px;
+  width: 100%;
+  background: transparent;
 }
 
 .result {

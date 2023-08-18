@@ -18,6 +18,7 @@
   font-size: 18px;
   max-width: 50ch;
   line-height: 1.5;
+  padding-right: 25px;
   color: var(--clr-neutral-grayish-violet);
 }
 
@@ -36,7 +37,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 89.9em) {
+@media (min-width: 90.1em) {
   .introduction {
     padding: 0;
     margin-top: 5rem;
@@ -63,6 +64,10 @@
   .introduction__text > h1 {
     margin-inline: auto;
     padding: 10px;
+  }
+
+  .introduction__text > p {
+    padding: 0;
   }
 
   .introduction__image {
