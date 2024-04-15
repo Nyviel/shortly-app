@@ -22,17 +22,18 @@ export class ShortenerComponent {
   constructor(private shortenService: ShortenService) {}
 
   onSubmit(): void {
-    this.shortenService.shorten(this.link?.value).subscribe({
-      next: (val: Link) => {
-        this.shortenedLinks.push(val);
-      },
-      complete: () => {
-        console.log('Request completed');
-      },
-      error: (err) => {
-        console.error(err);
-      },
-    });
+    // Shortcode api no longer exists
+    // this.shortenService.shorten(this.link?.value).subscribe({
+    //   next: (val: Link) => {
+    //     this.shortenedLinks.push(val);
+    //   },
+    //   complete: () => {
+    //     console.log('Request completed');
+    //   },
+    //   error: (err) => {
+    //     console.error(err);
+    //   },
+    // });
   }
 
   copyLink(link: string, index: number): void {

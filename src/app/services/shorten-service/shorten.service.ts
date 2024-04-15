@@ -8,16 +8,14 @@ import { LinkResponse } from 'src/app/interfaces/link-response';
   providedIn: 'root',
 })
 export class ShortenService {
-  private apiURL = 'https://api.shrtco.de/v2';
+  private apiURL = '';
   constructor(private http: HttpClient) {}
 
   shorten(longLink: string): Observable<Link> {
-    return this.http
-      .get<LinkResponse>(`${this.apiURL}/shorten?url=${longLink}`)
-      .pipe(
-        map((linkResponse: LinkResponse) => {
-          return linkResponse.result;
-        })
-      );
+    return this.http.get<LinkResponse>(`${this.apiURL}`).pipe(
+      map((linkResponse: LinkResponse) => {
+        return linkResponse.result;
+      })
+    );
   }
 }
